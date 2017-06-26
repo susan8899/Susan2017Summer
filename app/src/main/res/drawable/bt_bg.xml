@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Button Background-->
+
+
+<!--selector means for different status you choose different file-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--focused means pressed-->
+
+    <!--<item android:state_focused="true" android:drawable="@drawable/bt_pressed"></item>-->
+    <item android:state_pressed="true" android:drawable="@drawable/bt_pressed"></item>
+
+    <!--button released-->
+    <item android:state_pressed="false" android:drawable="@drawable/bt_released"></item>
+
+
+
+</selector>

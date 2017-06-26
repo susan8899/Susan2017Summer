@@ -26,19 +26,28 @@
             android:textSize="24sp" />
 
         <!--button appears on top blue bar, on left -->
+    <!--    under Design is you right-click -> XML
+        it will take you to the correct place in code-->
+        <!--button is a subclass of textview-->
         <Button
+            android:text="T"
+            android:textSize="24sp"
+            android:textColor="@android:color/white"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_centerVertical="true"
             android:layout_marginLeft="15dp"
+            android:background="@drawable/bt_bg"
             android:layout_alignParentLeft="true" />
 
         <!--button appears on top blue bar, on right -->
         <Button
-            android:layout_width="50dp"
+            android:layout_width="60dp"
             android:layout_height="50dp"
             android:layout_centerVertical="true"
             android:layout_marginRight="15dp"
+            android:onClick="login"
+            android:background="@drawable/bt_icon_bg"
             android:layout_alignParentRight="true" />
 
 
@@ -55,8 +64,9 @@
         android:orientation="horizontal"
         android:background="@android:color/white">
         
-        
+        <!--Demo Button-->
         <TextView
+            android:id="@+id/activity_tool_demo"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="3"
@@ -72,7 +82,9 @@
             android:layout_weight="0.05"
             android:background="@android:color/darker_gray"></View>
 
+        <!--work button-->
         <TextView
+            android:id="@+id/activity_tool_work"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="3"
@@ -85,13 +97,16 @@
     </LinearLayout>
 
     <!--this changes the area between the (brightBlue)top and (white)bottom bars -->
-        <ListView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_below="@+id/activity_main_title"
-    android:layout_above="@+id/activity_main_tool"
-    android:background="@android:color/darker_gray"
-            ></ListView>
+        <LinearLayout
+
+            android:orientation="vertical"
+            android:id="@+id/activity_main_fragment"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_below="@+id/activity_main_title"
+            android:layout_above="@+id/activity_main_tool"
+            android:background="@android:color/darker_gray"
+            ></LinearLayout>
 
 
 
