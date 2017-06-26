@@ -17,7 +17,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ViewPagerActivity"></activity>
+        <activity android:name=".ViewPagerActivity"/>
+        <activity android:name=".ScaleTypeActivity"/>  <!--page kept crashing bc this line was missing-->
+
     </application>
 
 </manifest>

@@ -1,16 +1,13 @@
 
 package com.example.susancarrera.susan2017summer;
 
-import android.support.annotation.StyleRes;
+import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
 
-
-import com.example.susancarrera.susan2017summer.R;
 import com.example.susancarrera.susan2017summer.adapter.BaseViewPagerAdapter;
 import com.example.susancarrera.susan2017summer.fragment.BlueFragment;
 import com.example.susancarrera.susan2017summer.fragment.GreenFragment;

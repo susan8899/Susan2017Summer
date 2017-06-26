@@ -1,11 +1,10 @@
 package com.example.susancarrera.susan2017summer;
 
+import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
-import android.os.Bundle;
 import android.view.View;
-
 
 import com.example.susancarrera.susan2017summer.adapter.ScalePagerAdapter;
 
@@ -19,7 +18,7 @@ public class ScaleTypeActivity extends AppCompatActivity {
 
     private ViewPager viewPager;
     private ScalePagerAdapter adapter;
-    private View view1,view2,view3,view4,view5,view6,view7,view8;
+    private View view1,view2,view3,view4,view5,view6,view7,view8,view9;
     private ArrayList<View> list;
 
 
@@ -27,9 +26,8 @@ public class ScaleTypeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scale_type);
-        list = new ArrayList<View>();
+        list = new ArrayList<>();
         viewPager = (ViewPager) findViewById(R.id.activity_scale_view_pager);
-
         LayoutInflater lf = getLayoutInflater().from(this);
         view1 = lf.inflate(R.layout.view_scale_centerinside,null);
         view2 = lf.inflate(R.layout.view_scale_center,null);
@@ -39,6 +37,7 @@ public class ScaleTypeActivity extends AppCompatActivity {
         view6 = lf.inflate(R.layout.view_scale_fitstart,null);
         view7 = lf.inflate(R.layout.view_scale_fitend,null);
         view8 = lf.inflate(R.layout.view_scale_fitxy,null);
+        view9 = lf.inflate(R.layout.view_scale_9patch,null);
 
         list.add(view1);
         list.add(view2);
@@ -48,6 +47,7 @@ public class ScaleTypeActivity extends AppCompatActivity {
         list.add(view6);
         list.add(view7);
         list.add(view8);
+        list.add(view9);
         adapter = new ScalePagerAdapter(list);
         viewPager.setAdapter(adapter);
     }

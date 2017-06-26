@@ -79,9 +79,7 @@ public class DemoFragment extends Fragment {
                         Intent intent5 = new Intent(getActivity(), AdvanceViewPagerActivity.class);
                         startActivity(intent5);
                         break;*/
-                    case 6:
-                        Intent intent6 = new Intent(getActivity(), LaunchModeActivity.class);
-                        startActivity(intent6);
+
 
 
                     default:

@@ -40,4 +40,6 @@ public class ScalePagerAdapter extends PagerAdapter {
         container.addView(list.get(position), 0);
         return list.get(position);
     }
+
 }
+
