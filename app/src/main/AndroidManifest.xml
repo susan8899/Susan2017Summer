@@ -6,7 +6,6 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
@@ -17,9 +16,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ViewPagerActivity"/>
-        <activity android:name=".ScaleTypeActivity"/>  <!--page kept crashing bc this line was missing-->
-
+        <activity android:name=".ViewPagerActivity" />
+        <activity android:name=".ScaleTypeActivity" /> <!-- page kept crashing bc this line was missing -->
+        <activity
+            android:name=".ActivityA"
+            android:launchMode="standard" />
+        <activity
+            android:name=".ActivityB"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ActivityC"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ActivityD"
+            android:launchMode="singleInstance" />
+        <activity android:name=".NotificationActivity"></activity>
     </application>
 
 </manifest>

@@ -31,7 +31,7 @@ public class DemoFragment extends Fragment {
         contentList.add("ViewPager");
         contentList.add("ImageScaleType");
         contentList.add("9Patch");
-        contentList.add("A");
+        contentList.add("Notification");
         contentList.add("B");
         contentList.add("C");
         contentList.add("LaunchMode");
@@ -74,11 +74,19 @@ public class DemoFragment extends Fragment {
                         Intent intent1 = new Intent(getActivity(), ScaleTypeActivity.class);
                         startActivity(intent1);
                         break;
+                    case 3:
+                        Intent intent3 = new Intent(getActivity(),NotificationActivity.class);
+                        startActivity(intent3);
+                        break;
 
                     /*case 5:
                         Intent intent5 = new Intent(getActivity(), AdvanceViewPagerActivity.class);
                         startActivity(intent5);
                         break;*/
+                    case 6:
+                        Intent intent6 = new Intent(getActivity(), ActivityA.class);
+                        startActivity(intent6);
+                        break;
 
 
 
