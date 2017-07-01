@@ -32,16 +32,16 @@ public class DemoFragment extends Fragment {
         contentList.add("ImageScaleType");
         contentList.add("9Patch");
         contentList.add("Notification");
-        contentList.add("B");
+        contentList.add("AdvanceListView");
         contentList.add("C");
         contentList.add("LaunchMode");
         contentList.add("E");
         contentList.add("F");
         contentList.add("G");
         contentList.add("H");
-        contentList.add("I");
+        contentList.add("Handler");
         contentList.add("J");
-        contentList.add("K");
+        contentList.add("Animation");
 
 
     }
@@ -78,6 +78,11 @@ public class DemoFragment extends Fragment {
                         Intent intent3 = new Intent(getActivity(),NotificationActivity.class);
                         startActivity(intent3);
                         break;
+                    case 4:
+                        Intent intent4 = new Intent(getActivity(),AdvanceListViewActivity.class);
+                        startActivity(intent4);
+                        break;
+
 
                     /*case 5:
                         Intent intent5 = new Intent(getActivity(), AdvanceViewPagerActivity.class);
@@ -87,8 +92,15 @@ public class DemoFragment extends Fragment {
                         Intent intent6 = new Intent(getActivity(), ActivityA.class);
                         startActivity(intent6);
                         break;
-
-
+                   /* case 11:Intent intent11 = new Intent(getActivity(), HandlerActivity.class);
+                        startActivity(intent11);
+                        break;*/
+                   /* case 12:Intent intent12 = new Intent(getActivity(), RunnableHandlerActivity.class);
+                        startActivity(intent12);
+                        break;*/
+                    /*case 13:Intent intent13 = new Intent(getActivity(), AnimationActivity.class);
+                        startActivity(intent13);
+                        break;*/
 
                     default:
                 }

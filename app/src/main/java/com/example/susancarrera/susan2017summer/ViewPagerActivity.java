@@ -15,7 +15,7 @@ import com.example.susancarrera.susan2017summer.fragment.RedFragment;
 
 import java.util.ArrayList;
 
-public class ViewPagerActivity extends AppCompatActivity {
+public class ViewPagerActivity extends BaseActivity {
 
     private ViewPager viewPager;
     private ArrayList<Fragment> list = new ArrayList<Fragment>();

@@ -60,20 +60,19 @@ public class RedFragment extends Fragment {
         UtilLog.d("Fragment", "onCreate");
     }
 
-    /*@Override
+   /* @Override
     public void onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_red, container, false);
-    }
+    }*/
 
-    @Override
+   /* @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_blue, container, false);
-    }
-*/
+    }*/
     @Override
     public void onStart() {
         super.onStart();

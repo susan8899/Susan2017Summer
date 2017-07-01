@@ -30,7 +30,10 @@
         <activity
             android:name=".ActivityD"
             android:launchMode="singleInstance" />
-        <activity android:name=".NotificationActivity"></activity>
+        <activity android:name=".NotificationActivity" />
+        <activity android:name=".AnimationActivity" />
+        <activity android:name=".GestureActivity" />
+        <activity android:name=".AdvanceListViewActivity"></activity>
     </application>
 
 </manifest>
