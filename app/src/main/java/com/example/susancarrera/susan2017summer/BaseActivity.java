@@ -21,6 +21,8 @@ public class BaseActivity extends AppCompatActivity {
     }
 
 
+
+
     public void  goToActivity(Class c){
         Intent intent = new Intent(this, c);
         startActivity(intent);

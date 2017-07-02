@@ -55,6 +55,7 @@ public class GreenFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+        UtilLog.d("Fragment","GreenOnCreate");
     }
 
     @Override
@@ -67,35 +68,35 @@ public class GreenFragment extends Fragment {
     @Override
     public void onStart() {
         super.onStart();
-        UtilLog.d("Fragment","GreenOnCreate");
+        UtilLog.d("Fragment","Green:onStart");
 
     }
 
     @Override
     public void onResume() {
         super.onResume();
-        UtilLog.d("Fragment","GreenOnCResume");
+        UtilLog.d("Fragment","Green:OnResume");
 
     }
 
     @Override
     public void onPause() {
         super.onPause();
-        UtilLog.d("Fragment","GreenOnPause");
+        UtilLog.d("Fragment","Green:OnPause");
 
     }
 
     @Override
     public void onStop() {
         super.onStop();
-        UtilLog.d("Fragment","GreenOnStop");
+        UtilLog.d("Fragment","Green:OnStop");
 
     }
 
     @Override
     public void onDestroy() {
         super.onDestroy();
-        UtilLog.d("Fragment","BluenDestory");
+        UtilLog.d("Fragment","Blue:OnDestory");
 
     }
 
