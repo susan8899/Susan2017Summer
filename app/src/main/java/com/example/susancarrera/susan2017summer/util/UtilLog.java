@@ -14,17 +14,16 @@ public class UtilLog {
     }
 
     public static void d(String tag, String msg) {
-        if (isLog) {
-            Log.d(tag, msg);
-
+        if(isLog){
+            Log.d(tag,msg);
         }
+
     }
-
     public static void v(String tag, String msg) {
-        if (isLog) {
-            Log.v(tag, msg);
-
+        if(isLog){
+            Log.v(tag,msg);
         }
+
     }
 
 }

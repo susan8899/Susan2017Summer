@@ -36,53 +36,53 @@ public class ActivityA extends BaseActivity {
     }*/
 
 
-    
+    @Override
+    protected void onCreate(Bundle savedInstanceState){
+
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_a);
+        showToast("NewActivityA");
+        ButterKnife.bind(this);
+
+    }
+
+    @Override
+    protected void onNewIntent(Intent intent){
+        super.onNewIntent(intent);
+        showToast("onNewIntent");
+    }
 
 
     @OnClick(R.id.activity_a_button)
     public void activityAButton(View v){
     Toast.makeText(this,"ActivityA", Toast.LENGTH_SHORT).show();
-
+        goToActivity(ActivityA.class);
     }
 
-    
+    @OnClick(R.id.activity_b_button)
+    public void activityBButton(View v){
+
+        showToast("ActivityB");
+        goToActivity(ActivityB.class);
+    }
 
 
     @OnClick(R.id.activity_c_button)
     public void activityCButton(View v){
 
-        /*showToast("ActivityC");*/
+        showToast("ActivityC");
+        goToActivity(ActivityC.class);
     }
+
     @OnClick(R.id.activity_d_button)
     public void activityDButton(View v){
 
-        /*showToast("ActivityD");*/
+        showToast("ActivityD");
+        goToActivity(ActivityD.class);
     }
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState){/*    @OnClick(R.id.activity_b_button)
-    public void activityBButton(View v){
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_b);
-        Toast.makeText(this, "onCreate", Toast.LENGTH_SHORT).show();
-        Log.d("LifeCycle", "onCreate");
-        list.add(new RedFragment());
-        list.add(new GreenFragment());
-        list.add(new BlueFragment());
-        BaseViewPagerAdapter pagerAdapter =
-                new BaseViewPagerAdapter(getSupportFragmentManager(),list);
-        viewPager.setAdapter(pagerAdapter);
-        viewPager.setCurrentItem(1);
-
-        *//*showToast("ActivityB");*//*
-    }*/
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_a);
 
 
-    }
-
-  
 
 
 

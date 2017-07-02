@@ -15,32 +15,53 @@ import butterknife.OnClick;
 
 public class ActivityB extends BaseActivity {
 
-
-
-
-
-
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState){
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_b);
-        ButterKnife.bind(this);
         showToast("onCreate");
+
     }
-
-
-
     @Override
     protected void onNewIntent(Intent intent){
         super.onNewIntent(intent);
         showToast("onNewIntent");
     }
 
-    /*everytime you click, the word 'click' appears bc it matches the id with the id in XML file*/
-    /*@OnClick(R.id.test)
-    public void click(View v){
-        Toast.makeText(this, "You clicked Something", Toast.LENGTH_SHORT).show();
-    }*/
+
+
+
+    @OnClick(R.id.activity_b_to_a)
+    public void activityAButton(View v){
+        Toast.makeText(this,"ActivityA", Toast.LENGTH_SHORT).show();
+        goToActivity(ActivityA.class);
+
+    }
+
+    @OnClick(R.id.activity_b_to_b)
+    public void activityBButton(View v){
+
+        showToast("ActivityB");
+        goToActivity(ActivityB.class);
+    }
+
+
+    @OnClick(R.id.activity_b_to_c)
+    public void activityCButton(View v){
+
+        showToast("ActivityC");
+        goToActivity(ActivityC.class);
+    }
+
+    @OnClick(R.id.activity_b_to_d)
+    public void activityDButton(View v){
+
+        showToast("ActivityD");
+        goToActivity(ActivityD.class);
+    }
+
+
 }
 
 
