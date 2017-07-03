@@ -35,7 +35,13 @@
         <activity android:name=".AnimationActivity" />
         <activity android:name=".GestureActivity" />
         <activity android:name=".AdvanceListViewActivity" />
-        <activity android:name=".AdvanceViewPagerActivity"></activity>
+        <activity android:name=".AdvanceViewPagerActivity" />
+        <activity android:name=".ResultActivity1" />
+        <activity android:name=".ResultActivity" />
+        <activity android:name=".ResultActivity2" />
+        <activity android:name=".RadioGroupActivity" />
+        <activity android:name=".CheckBoxActivity" />
+        <activity android:name=".DialogActivity"></activity>
     </application>
 
 </manifest>

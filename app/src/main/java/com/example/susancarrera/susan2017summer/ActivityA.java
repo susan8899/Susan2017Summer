@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 
 import com.example.susancarrera.susan2017summer.adapter.BaseViewPagerAdapter;
+import com.example.susancarrera.susan2017summer.audio.BaseBean;
 import com.example.susancarrera.susan2017summer.fragment.BlueFragment;
 import com.example.susancarrera.susan2017summer.fragment.GreenFragment;
 import com.example.susancarrera.susan2017summer.fragment.RedFragment;
@@ -41,11 +42,27 @@ public class ActivityA extends BaseActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_a);
-        showToast("NewActivityA");
+//        Toast.makeText(this,"onCreate", Toast.LENGTH_SHORT).show();
         ButterKnife.bind(this);
+        Intent intent = getIntent();
+        Bundle bundle = intent.getBundleExtra("Bundle");
+        String bs = bundle.getString("StringBundle");
+        int bi = bundle.getInt("IntegerBundle");
+        BaseBean bean = (BaseBean)bundle.getSerializable("Object");
+        shortToast(bean.getName());
+//        shortToast(bs);
+//        shortToast("Integer is:" +bi);
+//        String s = intent.getStringExtra("StringInfo"); //String is an object so it doesnt need a default value
+//        int i = intent.getIntExtra("IntegerInfo",0);    //int is a raw value so it cant be null.thats what the 0 is for, its the default value
+//        shortToast(s);
+        //shortToast(String.valueOf(i) );  //these 2 are the same
+        //shortToast(i+"");
+        //shortToast("Integer is:" +i);
 
     }
 
+
+    //this is to update the activity
     @Override
     protected void onNewIntent(Intent intent){
         super.onNewIntent(intent);

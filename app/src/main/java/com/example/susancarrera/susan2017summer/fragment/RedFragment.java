@@ -57,7 +57,7 @@ public class RedFragment extends Fragment {
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
         //Log.d("Fragment","onCreate");
-        UtilLog.d("Fragment", "RedOnCreate");
+        UtilLog.d("Fragment", "Red:OnCreate");
         //UtilLog.v("Fragment","onCreate");
     }
 
@@ -84,7 +84,7 @@ public class RedFragment extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
-        UtilLog.d("Fragment","Blue:OnResume");
+        UtilLog.d("Fragment","Red:OnResume");
 
     }
 
