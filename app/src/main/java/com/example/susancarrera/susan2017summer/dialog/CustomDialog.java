@@ -21,9 +21,10 @@ public class CustomDialog extends Dialog {
 
     public interface ICustomDialogListener{
         public void onOKClicked(String msg);
-        //abstract void onCancleClicked();
+        //abstract void onCancelClicked();
 
     }
+
 
 
     @OnClick(R.id.dialog_custom_ok)
@@ -32,6 +33,8 @@ public class CustomDialog extends Dialog {
 
         cancel();
     }
+
+
 
 
     public CustomDialog(@NonNull Context context,ICustomDialogListener listener){

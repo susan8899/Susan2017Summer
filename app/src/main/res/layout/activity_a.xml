@@ -24,45 +24,45 @@
         android:gravity="center|bottom"
         android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/activity_a_button"
-        android:layout_width="95dp"
-        android:layout_height="60dp"
-        android:gravity="center"
-        android:text="A"
-        android:textAllCaps="false"
-        android:onClick="activityAButton"/>
+        <Button
+            android:id="@+id/activity_a_button"
+            android:layout_width="95dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="A"
+            android:textAllCaps="false"
+            android:onClick="activityAButton"/>
 
 
 
-     <Button
-        android:id="@+id/activity_b_button"
-        android:layout_width="95dp"
-        android:layout_height="60dp"
-        android:gravity="center"
-        android:textAllCaps="false"
-        android:text="B"
-         android:onClick="activityBButton"/>
+        <Button
+            android:id="@+id/activity_b_button"
+            android:layout_width="95dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:text="B"
+            android:onClick="activityBButton"/>
 
-    <Button
-        android:id="@+id/activity_c_button"
-        android:layout_width="95dp"
-        android:layout_height="60dp"
+        <Button
+            android:id="@+id/activity_c_button"
+            android:layout_width="95dp"
+            android:layout_height="60dp"
 
-        android:gravity="center"
-        android:textAllCaps="false"
-        android:text="C"
-        android:onClick="activityCButton"/>
-    <Button
-        android:id="@+id/activity_d_button"
-        android:layout_width="95dp"
-        android:layout_height="60dp"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:text="C"
+            android:onClick="activityCButton"/>
+        <Button
+            android:id="@+id/activity_d_button"
+            android:layout_width="95dp"
+            android:layout_height="60dp"
 
-        android:gravity="center"
-        android:textAllCaps="false"
-        android:text="D"
-        android:onClick="activityDButton"/>
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:text="D"
+            android:onClick="activityDButton"/>
 
 
-</LinearLayout>
+    </LinearLayout>
 </LinearLayout>

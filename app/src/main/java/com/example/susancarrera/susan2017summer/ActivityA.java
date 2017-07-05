@@ -72,7 +72,7 @@ public class ActivityA extends BaseActivity {
 
     @OnClick(R.id.activity_a_button)
     public void activityAButton(View v){
-    Toast.makeText(this,"ActivityA", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this,"ActivityA", Toast.LENGTH_SHORT).show();
         goToActivity(ActivityA.class);
     }
 
@@ -104,8 +104,9 @@ public class ActivityA extends BaseActivity {
 
 
 
-    
 
-   
+
+
 }
+
 
