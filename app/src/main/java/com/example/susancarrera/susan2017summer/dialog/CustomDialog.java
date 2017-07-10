@@ -43,4 +43,21 @@ public class CustomDialog extends Dialog {
         ButterKnife.bind(this);
         this.listener = listener;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

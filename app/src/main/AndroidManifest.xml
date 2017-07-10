@@ -46,6 +46,9 @@
             android:name=".HandlerActivity"
             android:label="@string/title_activity_handler"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".RunableHandlerActivity" />
+        <activity android:name=".TestAudioActivity" />
+        <activity android:name=".Quiz3Activity"></activity>
     </application>
 
 </manifest>

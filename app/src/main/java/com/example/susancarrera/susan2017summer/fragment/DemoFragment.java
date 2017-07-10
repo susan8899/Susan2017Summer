@@ -40,8 +40,18 @@ public class DemoFragment extends Fragment {
         contentList.add("CheckBox");
         contentList.add("Dialog");
         contentList.add("Handler");
-        contentList.add("J");
+        contentList.add("HandlerRunable");
         contentList.add("Animation");
+        contentList.add("14");
+        contentList.add("15");
+        contentList.add("17");
+        contentList.add("17");
+        contentList.add("TestAudio");
+        contentList.add("6");
+        contentList.add("Quiz3");
+
+
+
 
 
     }
@@ -117,15 +127,23 @@ public class DemoFragment extends Fragment {
                         Intent intent10 = new Intent(getActivity(), DialogActivity.class);
                         startActivity(intent10);
                         break;
-                   /* case 11:Intent intent11 = new Intent(getActivity(), HandlerActivity.class);
+                   case 11:Intent intent11 = new Intent(getActivity(), HandlerActivity.class);
                         startActivity(intent11);
-                        break;*/
-                   /* case 12:Intent intent12 = new Intent(getActivity(), RunnableHandlerActivity.class);
+                        break;
+                   case 12:Intent intent12 = new Intent(getActivity(), RunableHandlerActivity.class);
                         startActivity(intent12);
-                        break;*/
-                    /*case 13:Intent intent13 = new Intent(getActivity(), AnimationActivity.class);
+                        break;
+                    case 13:Intent intent13 = new Intent(getActivity(), AnimationActivity.class);
                         startActivity(intent13);
-                        break;*/
+                        break;
+                    /*case 18:Intent intent18 = new Intent(getActivity(), TestAudioActivity.class);
+                        startActivity(intent18);
+                        break;
+
+*/
+                    case 20:Intent intent20 = new Intent(getActivity(), Quiz3Activity.class);
+                        startActivity(intent20);
+                        break;
 
                     default:
                 }
