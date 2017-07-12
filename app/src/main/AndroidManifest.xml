@@ -48,7 +48,8 @@
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity android:name=".RunableHandlerActivity" />
         <activity android:name=".TestAudioActivity" />
-        <activity android:name=".Quiz3Activity"></activity>
+        <activity android:name=".Quiz3Activity" />
+        <activity android:name=".Quiz5Activity"></activity>
     </application>
 
 </manifest>

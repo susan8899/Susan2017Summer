@@ -24,10 +24,6 @@ public class Quiz3Dialog extends Dialog{
 
 
 
-
-
-
-
     private final ICustomDialogListener listener;
 
     public interface ICustomDialogListener{

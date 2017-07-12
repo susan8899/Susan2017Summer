@@ -49,6 +49,9 @@ public class DemoFragment extends Fragment {
         contentList.add("TestAudio");
         contentList.add("6");
         contentList.add("Quiz3");
+        contentList.add("Quiz5");
+
+
 
 
 
@@ -143,6 +146,9 @@ public class DemoFragment extends Fragment {
 */
                     case 20:Intent intent20 = new Intent(getActivity(), Quiz3Activity.class);
                         startActivity(intent20);
+                        break;
+                    case 21:Intent intent21 = new Intent(getActivity(), Quiz5Activity.class);
+                        startActivity(intent21);
                         break;
 
                     default:
