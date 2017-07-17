@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.susancarrera.susan2017summer">
 
+    <provider
+        android:name=".content.Provider"
+        android:authorities="cn.com.example.hit.httpspt.susan2017summer"
+        android:exported="true" />
+
     <application
         android:name=".SusanApplication"
         android:allowBackup="true"
@@ -49,7 +54,11 @@
         <activity android:name=".RunableHandlerActivity" />
         <activity android:name=".TestAudioActivity" />
         <activity android:name=".Quiz3Activity" />
-        <activity android:name=".Quiz5Activity"></activity>
+        <activity android:name=".Quiz5Activity" />
+        <activity android:name=".AnimatorActivity" />
+        <activity android:name=".SharedPreferenceActivity" />
+        <activity android:name=".ServiceActivity"></activity>
+        <service android:name=".service.TestService"/>
     </application>
 
 </manifest>

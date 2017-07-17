@@ -23,9 +23,8 @@ public class ActivityC extends BaseActivity {
         setContentView(R.layout.activity_c);
         showToast("onCreate");
         ButterKnife.bind(this);
-
-
     }
+
     @Override
     protected void onNewIntent(Intent intent){
         super.onNewIntent(intent);
